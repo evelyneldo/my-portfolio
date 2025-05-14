@@ -1,0 +1,78 @@
+
+.experience-section {
+  background: #333;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;        /* ✅ Stack heading and cards */
+  justify-content: center;
+  align-items: center;           /* ✅ Center everything horizontally */
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+
+.experience-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px; /* Wider container to fit cards */
+}
+
+.experience-box {
+  flex: 1 1 calc(50% - 30px); /* 🔥 Forces 2 per row with 30px gap */
+  min-width: 300px;
+  max-width: 500px;
+  background: #4b4b4b;
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.experience-box:hover {
+  transform: translateY(-8px);
+}
+
+.experience-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: #f0f0f0;
+}
+
+.company {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.experience-box ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ✅ Mobile stack fix */
+@media (max-width: 768px) {
+  .experience-box {
+    flex: 1 1 100%;
+  }
+}

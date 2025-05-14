@@ -1,0 +1,84 @@
+
+.achievements-section {
+  background-color: rgb(249 248 255);
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;       /* ✅ Add this */
+  min-height: 100vh;         /* ✅ Add this */
+  box-sizing: border-box;
+}
+
+.achievements-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #4b4b4b;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+
+.torn-container {
+  position: relative;
+  background: rgb(249 248 255);
+  padding: 60px 30px 40px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.torn-container::before,
+.torn-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.torn-container::before {
+  top: -40px;
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* torn-top texture */
+}
+
+.torn-container::after {
+  bottom: -40px;
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* torn-bottom texture */
+  transform: rotate(180deg);
+}
+
+/* Timeline style (reuse) */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0;              /* Removed side padding */
+  border: none;            /* Removed vertical line */
+  position: relative;
+  z-index: 2;
+}
+
+/* REMOVE timeline-dot entirely */
+.timeline-dot {
+  display: none;
+}
+
+.timeline-item {
+  display: block;  /* No flex alignment needed */
+}
+
+.timeline-content {
+  background: #ffffff;
+  padding: 16px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+}

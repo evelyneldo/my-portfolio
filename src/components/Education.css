@@ -1,0 +1,93 @@
+
+
+.education-section {
+  padding: 40px 40px 80px; /* 👈 balanced padding */
+  background-color: rgb(232 228 255);
+  min-height: 100vh;   
+  max-height: 100vh;;      /* ✅ Add this */
+  display: flex;             /* ✅ Center content */
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  
+}
+
+.education-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #004d61;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+/* Flexbox to position icon and cards side by side */
+.education-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+/* Icon container - full height of card stack */
+.education-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.education-icon-wrapper img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%; /* 🎯 makes it circular */
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Cards column */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Each education card */
+.education-entry {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-bottom: 5px solid #5a20cb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.education-entry h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.education-entry .university {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.education-entry .date,
+.education-entry .gpa {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 3px 0;
+}

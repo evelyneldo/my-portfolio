@@ -1,0 +1,64 @@
+.contact-section {
+  padding: 120px 20px 80px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;       /* ✅ Add this */
+  min-height: 100vh;         /* ✅ Add this */
+  box-sizing: border-box;
+}
+
+
+
+.contact-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: auto; /* ensures it stays centered if needed */
+}
+
+
+.contact-card h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #000000;
+  font-family: 'Playfair Display', serif;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 12px 0;
+  font-size: 1.1rem;
+  color: #000000;
+  justify-content: center;
+}
+
+.contact-item .icon {
+  font-size: 1.5rem;
+}
+
+.github { color: #000000; }
+.email { color: #d44638; }
+.phone { color: #009688; }
+.address { color: #6c63ff; }
+.linkedin { color: #1f267c; }
+
+.contact-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+@media (max-height: 700px) {
+  .contact-section {
+    padding-top: 100px;
+  }
+}
