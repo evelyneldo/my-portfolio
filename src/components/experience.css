@@ -1,24 +1,23 @@
-
 .experience-section {
   background: #333;
-  padding: 80px 40px;
+  padding: 100px 20px 60px; 
   display: flex;
-  flex-direction: column;        /* ✅ Stack heading and cards */
-  justify-content: center;
-  align-items: center;           /* ✅ Center everything horizontally */
+  flex-direction: column;
+  justify-content: flex-start;  
+  align-items: center;
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
+  scroll-margin-top: 60px; 
 }
 
 .experience-title {
   font-size: 2.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #ffffff;
   font-family: 'Playfair Display', serif;
   text-align: center;
 }
-
 
 .experience-grid {
   display: flex;
@@ -26,11 +25,12 @@
   gap: 30px;
   justify-content: center;
   width: 100%;
-  max-width: 1200px; /* Wider container to fit cards */
+  max-width: 1200px;
+  margin-top: 10px;
 }
 
 .experience-box {
-  flex: 1 1 calc(50% - 30px); /* 🔥 Forces 2 per row with 30px gap */
+  flex: 1 1 calc(50% - 30px);
   min-width: 300px;
   max-width: 500px;
   background: #4b4b4b;
@@ -70,9 +70,26 @@
   line-height: 1.6;
 }
 
-/* ✅ Mobile stack fix */
 @media (max-width: 768px) {
+  .experience-section {
+    padding-top: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .experience-grid {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+  }
+
   .experience-box {
-    flex: 1 1 100%;
+    width: 100%;
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .experience-title {
+    font-size: 2rem;
   }
 }

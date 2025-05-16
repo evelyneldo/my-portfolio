@@ -3,9 +3,10 @@
   background: #333;
   display: flex;
   justify-content: center;
-  align-items: center;       /* ✅ Add this */
-  min-height: 100vh;         /* ✅ Add this */
+  align-items: center;       
+  min-height: 100vh;        
   box-sizing: border-box;
+  scroll-margin-top: 60px; 
 }
 
 
@@ -18,7 +19,7 @@
   width: 100%;
   max-width: 600px;
   text-align: center;
-  margin: auto; /* ensures it stays centered if needed */
+  margin: auto; 
 }
 
 
@@ -57,8 +58,20 @@
 .contact-item a:hover {
   text-decoration: underline;
 }
-@media (max-height: 700px) {
-  .contact-section {
-    padding-top: 100px;
+@media (max-width: 768px) {
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .contact-item a {
+    max-width: 90vw;
+    word-break: break-word;
+  }
+
+  .contact-card {
+    width: 95%;
   }
 }
+

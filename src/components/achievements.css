@@ -4,9 +4,10 @@
   padding: 100px 20px;
   display: flex;
   justify-content: center;
-  align-items: center;       /* ✅ Add this */
-  min-height: 100vh;         /* ✅ Add this */
+  align-items: center;     
+  min-height: 100vh;        
   box-sizing: border-box;
+  scroll-margin-top: 60px; 
 }
 
 .achievements-title {
@@ -44,33 +45,32 @@
 
 .torn-container::before {
   top: -40px;
-  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* torn-top texture */
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); 
 }
 
 .torn-container::after {
   bottom: -40px;
-  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* torn-bottom texture */
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); 
   transform: rotate(180deg);
 }
 
-/* Timeline style (reuse) */
+
 .timeline-container {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 0;              /* Removed side padding */
-  border: none;            /* Removed vertical line */
+  padding: 0;             
+  border: none;            
   position: relative;
   z-index: 2;
 }
 
-/* REMOVE timeline-dot entirely */
 .timeline-dot {
   display: none;
 }
 
 .timeline-item {
-  display: block;  /* No flex alignment needed */
+  display: block; 
 }
 
 .timeline-content {

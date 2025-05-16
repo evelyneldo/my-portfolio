@@ -6,7 +6,6 @@ function Experience() {
     <section className="experience-section" id="experience">
       <h2 className="experience-title">Experience</h2>
       <div className="experience-grid">
-        {/* Experience Card 1 */}
         <div className="experience-box">
           <h3>Software Developer</h3>
           <p className="company">Tata Consultancy Services</p>
@@ -17,8 +16,6 @@ function Experience() {
             <li>Worked with Azure Cloud & Agile tools</li>
           </ul>
         </div>
-
-        {/* Experience Card 2 */}
         <div className="experience-box">
           <h3>Assistant Teaching Staff</h3>
           <p className="company">Code Camp, South Australia</p>

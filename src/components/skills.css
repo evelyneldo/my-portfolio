@@ -6,11 +6,12 @@
   margin: 40px auto;
   background-color: rgb(255 255 255);
   max-width: 1200px;
-  min-height: 100vh;         /* ✅ Already exists — good! */
+  min-height: 100vh;        
   box-sizing: border-box;
   position: relative;
-  align-content: center;     /* ✅ Add this */
+  align-content: center;     
   justify-content: center;
+  scroll-margin-top: 60px; 
 }
 .skills-title {
   font-size: 2.5rem;
@@ -23,7 +24,7 @@
 
 .flip-card {
   perspective: 800px;
-  height: 160px; /* smaller height */
+  height: 160px; 
   cursor: pointer;
 }
 
@@ -77,4 +78,23 @@
   list-style-type: disc;
   padding-left: 16px;
   margin: 0;
+}
+@media (max-width: 768px) {
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .skills-flip-section {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    padding: 30px 15px;
+  }
+
+  .flip-card {
+    height: 150px;
+  }
+
+  .flip-front, .flip-back {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
 }

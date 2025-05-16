@@ -1,15 +1,13 @@
-
-
 .projects-section {
   padding: 80px 30px;
   background: #f5f7fa;
   text-align: center;
-  min-height: 100vh;         /* ✅ Add this */
-  display: flex;
+  min-height: 100vh;         
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  scroll-margin-top: 60px; 
 }
 
 .projects-title {
@@ -75,4 +73,18 @@
 .project-link:hover {
   color: #004b99;
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
 }

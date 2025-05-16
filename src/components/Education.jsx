@@ -5,12 +5,9 @@ function Education() {
   return (
     <section className="education-section" id="education">
       <div className="education-wrapper">
-        {/* Icon on the left side */}
         <div className="education-icon-wrapper">
           <img src={graduateIcon} alt="Graduate Icon" />
         </div>
-
-        {/* Education cards on the right */}
         <div className="education-container">
           <h2 className="education-title">Education</h2>
           <div className="education-entry">

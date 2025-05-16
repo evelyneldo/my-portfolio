@@ -1,19 +1,16 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
   overflow-x: hidden;
-  height: 100vh;
+  background-color: #fff;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-section {
-  scroll-margin-top: 50px;   /* ✅ Match the new header height */
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-}

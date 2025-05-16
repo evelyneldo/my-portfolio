@@ -1,15 +1,13 @@
-
-
 .education-section {
-  padding: 40px 40px 80px; /* 👈 balanced padding */
+  padding: 40px 20px 80px;
   background-color: rgb(232 228 255);
-  min-height: 100vh;   
-  max-height: 100vh;;      /* ✅ Add this */
-  display: flex;             /* ✅ Center content */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  
+  scroll-margin-top: 60px; 
 }
 
 .education-title {
@@ -20,16 +18,18 @@
   text-align: center;
 }
 
-/* Flexbox to position icon and cards side by side */
+
 .education-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
   flex-wrap: nowrap;
+  width: 100%;
+  max-width: 1200px;
 }
 
-/* Icon container - full height of card stack */
+
 .education-icon-wrapper {
   display: flex;
   align-items: center;
@@ -41,14 +41,12 @@
   height: 200px;
   width: 200px;
   object-fit: cover;
-  border-radius: 50%; /* 🎯 makes it circular */
+  border-radius: 50%;
   background-color: #ffffff;
   padding: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-
-/* Cards column */
 .education-container {
   display: flex;
   flex-direction: column;
@@ -57,7 +55,6 @@
   max-width: 700px;
 }
 
-/* Each education card */
 .education-entry {
   background-color: #ffffff;
   padding: 25px 30px;
@@ -90,4 +87,30 @@
   font-size: 0.95rem;
   color: #666;
   margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+  .education-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .education-icon-wrapper img {
+    height: 130px;
+    width: 130px;
+  }
+
+  .education-container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .education-entry {
+    padding: 18px;
+    width: 100%;
+  }
+
+  .education-title {
+    font-size: 2rem;
+  }
 }
