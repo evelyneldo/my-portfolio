@@ -50,13 +50,12 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .intro {
     flex-direction: column;
     text-align: center;
-    padding: 100px 20px 60px;
-    gap: 30px;
+    padding: 80px 15px 50px;
+    gap: 25px;
   }
 
   .left, .right {
@@ -66,21 +65,24 @@
   }
 
   .intro-greeting {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .highlighted-name {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .intro-description {
-    font-size: 1rem;
+    font-size: 0.95rem;
     max-width: 100%;
+    line-height: 1.5;
     text-align: justify;
+    margin-top: 8px;
   }
 
   .myimage {
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
+    border-width: 3px;
   }
 }

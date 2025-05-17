@@ -59,19 +59,35 @@
   text-decoration: underline;
 }
 @media (max-width: 768px) {
+  .contact-section {
+    padding: 80px 15px 60px;
+  }
+
+  .contact-card {
+    padding: 25px;
+    width: 95%;
+  }
+
+  .contact-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
   .contact-item {
     flex-direction: column;
     text-align: center;
+    font-size: 0.95rem; 
+    gap: 10px;
     word-break: break-word;
+  }
+
+  .contact-item .icon {
+    font-size: 1.2rem;
   }
 
   .contact-item a {
     max-width: 90vw;
+    font-size: 0.95rem;
     word-break: break-word;
   }
-
-  .contact-card {
-    width: 95%;
-  }
 }
-

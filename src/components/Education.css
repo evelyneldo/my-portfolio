@@ -90,27 +90,52 @@
 }
 
 @media (max-width: 768px) {
+  .education-section {
+    padding: 60px 15px 60px;
+  }
+
+  .education-title {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
   .education-wrapper {
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
+    align-items: center;
   }
 
   .education-icon-wrapper img {
-    height: 130px;
-    width: 130px;
+    height: 110px;
+    width: 110px;
+    padding: 8px;
   }
 
   .education-container {
     max-width: 100%;
-    padding: 0 15px;
+    padding: 0 12px;
+    gap: 20px;
   }
 
   .education-entry {
-    padding: 18px;
+    padding: 16px;
     width: 100%;
   }
 
-  .education-title {
-    font-size: 2rem;
+  .education-entry h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+
+  .education-entry .university {
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+  }
+
+  .education-entry .date,
+  .education-entry .gpa {
+    font-size: 0.85rem;
+    margin: 2px 0;
   }
 }

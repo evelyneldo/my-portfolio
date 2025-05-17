@@ -61,7 +61,7 @@
   background-color: rgb(246 244 255);
   color: #161616;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   flex-direction: column;
   gap: 8px;
 }
@@ -81,8 +81,6 @@
   padding-left: 16px;
   margin: 0;
 }
-
-/* Flip icon style - no animation */
 .flip-icon {
   font-size: 1.2rem;
   color: #666;
@@ -105,7 +103,7 @@
 
   .flip-front,
   .flip-back {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 10px;
   }
 

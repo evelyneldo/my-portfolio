@@ -56,9 +56,12 @@
     background-color: rgb(232 228 255);
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-    padding: 12px 0;
+    gap: 6px; 
+    padding: 8px 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-height: 250px; 
+    overflow-y: auto;
+    z-index: 999;
   }
 
   .nav-links.open {
@@ -68,7 +71,8 @@
   .nav-links a {
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+    font-size: 0.9rem;
+    padding: 6px 0; 
     border-bottom: 1px solid #ddd;
   }
 }

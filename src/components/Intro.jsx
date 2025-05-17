@@ -14,7 +14,7 @@ function Intro() {
           Skilled in building robust web applications with a strong foundation in software development,
           DevOps, and SQL, and a growing interest in machine learning. I thrive in collaborative environments
           and am passionate about delivering impactful, high-quality solutions that solve real-world problems.
-          Let’s turn ideas into innovation — together.
+          Let’s turn ideas into innovation - together.
         </p>
       </div>
       <div className="right">
