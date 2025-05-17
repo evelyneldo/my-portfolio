@@ -6,13 +6,14 @@
   margin: 40px auto;
   background-color: rgb(255 255 255);
   max-width: 1200px;
-  min-height: 100vh;        
+  min-height: 100vh;
   box-sizing: border-box;
   position: relative;
-  align-content: center;     
+  align-content: center;
   justify-content: center;
-  scroll-margin-top: 60px; 
+  scroll-margin-top: 60px;
 }
+
 .skills-title {
   font-size: 2.5rem;
   margin-bottom: 40px;
@@ -21,10 +22,9 @@
   text-align: center;
 }
 
-
 .flip-card {
   perspective: 800px;
-  height: 160px; 
+  height: 160px;
   cursor: pointer;
 }
 
@@ -52,7 +52,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -61,7 +61,9 @@
   background-color: rgb(246 244 255);
   color: #161616;
   font-weight: bold;
-  font-size: 1.2 rem;
+  font-size: 1.2rem;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .flip-back {
@@ -79,6 +81,14 @@
   padding-left: 16px;
   margin: 0;
 }
+
+/* Flip icon style - no animation */
+.flip-icon {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 8px;
+}
+
 @media (max-width: 768px) {
   .skills-title {
     font-size: 2rem;
@@ -93,8 +103,13 @@
     height: 150px;
   }
 
-  .flip-front, .flip-back {
+  .flip-front,
+  .flip-back {
     font-size: 0.9rem;
     padding: 10px;
+  }
+
+  .flip-icon {
+    font-size: 1rem;
   }
 }

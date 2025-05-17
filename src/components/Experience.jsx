@@ -6,16 +6,18 @@ function Experience() {
     <section className="experience-section" id="experience">
       <h2 className="experience-title">Experience</h2>
       <div className="experience-grid">
-        <div className="experience-box">
+       <div className="experience-box">
           <h3>Software Developer</h3>
-          <p className="company">Tata Consultancy Services</p>
+          <p className="company">Tata Consultancy Services Limited, India</p>
           <p className="duration">Jan 2021 – Jan 2023</p>
           <ul>
-            <li>Built web apps using ReactJS</li>
-            <li>Integrated Spring Boot & PL/SQL APIs</li>
-            <li>Worked with Azure Cloud & Agile tools</li>
+            <li>Designed and implemented web interfaces using ReactJS, enhancing user experience.</li>
+            <li>Developed and tested web services with Java and PL/SQL, using tools like SoapUI and Postman.</li>
+            <li>Adapted quickly to diverse technologies, including Microsoft Azure Cloud and Rational Team Concert (RTC).</li>
+            <li>Actively participated in Agile workflows, including sprint planning and daily stand-ups.</li>
           </ul>
         </div>
+
         <div className="experience-box">
           <h3>Assistant Teaching Staff</h3>
           <p className="company">Code Camp, South Australia</p>

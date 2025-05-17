@@ -2,16 +2,44 @@ import { useState } from 'react';
 import './skills.css';
 
 const skills = [
-  { category: "Programming Languages", items: ["Java", "Python"] },
-  { category: "Web Development", items: ["ReactJS", "HTML", "CSS", "JavaScript"] },
-  { category: "Databases", items: ["MySQL", "PL/SQL"] },
-  { category: "DevOps & Tools", items: ["Azure DevOps", "Azure Pipelines", "Git"] },
-  { category: "Testing Tools", items: ["UFT", "Postman"] },
-  { category: "IDEs", items: ["Eclipse", "VS Code", "IntelliJ", "RTC"] },
-  { category: "Productivity Tools", items: ["MS Office", "Outlook"] },
-  { category: "Soft Skills", items: ["Problem-solving", "Collaboration", "Adaptability"] },
-  { category: "Software Development Principles", items: ["Agile", "Sprint Planning", "Code Reviews"] },
+  {
+    category: "Programming Languages",
+    items: ["Java", "Python", "JavaScript", "SQL"]
+  },
+  {
+    category: "Web Development",
+    items: ["ReactJS", "HTML", "CSS", "REST APIs","Node.js (Basics)"]
+  },
+  {
+    category: "Databases",
+    items: ["MySQL","PL/SQL"]
+  },
+  {
+    category: "DevOps & Cloud Tools",
+    items: ["Azure DevOps", "Azure Pipelines", "Git", "GitHub"]
+  },
+  {
+    category: "Testing & Debugging Tools",
+    items: ["Postman", "SoapUI", "UFT", "JUnit"]
+  },
+  {
+    category: "IDEs & Editors",
+    items: ["Eclipse", "VS Code", "IntelliJ IDEA", "RTC"]
+  },
+  {
+    category: "Software Development Principles",
+    items: ["Agile", "Sprint Planning", "Code Reviews", "Scrum"]
+  },
+  {
+    category: "Productivity Tools",
+    items: ["MS Office", "Outlook", "Teams"]
+  },
+  {
+    category: "Soft Skills",
+    items: ["Problem-solving", "Collaboration", "Adaptability", "Communication"]
+  }
 ];
+
 
 function Skills() {
   const [flippedIndex, setFlippedIndex] = useState(null);
@@ -30,9 +58,11 @@ function Skills() {
           onClick={() => handleFlip(index)}
         >
           <div className="flip-inner">
-            <div className="flip-front">
-              {skill.category}
-            </div>
+          <div className="flip-front">
+            <span>{skill.category}</span>
+            <i className="fa-solid fa-rotate flip-icon" title="Click to Flip"></i>
+          </div>
+
             <div className="flip-back">
               <ul>
                 {skill.items.map((item, i) => (
